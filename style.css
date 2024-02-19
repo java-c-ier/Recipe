@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.navbar{
+    min-height: 70px;
+    background-color: #07334e;
+    background-image: linear-gradient(160deg, #07334e 0%, #2b4e9a 40%, #1b9270 100%);
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    width: 100%;
+}
+
+#navList{
+    list-style:none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 80px;
+}
+
+#navBrand{
+    font-size: 1.8rem;
+    color: whitesmoke;
+}
+
+#items{
+    display: flex;
+    gap: 60px;
+}
+
+a{
+    color: whitesmoke;
+}
+
+footer{
+    background-color: #07334e;
+    background-image: linear-gradient(160deg, #07334e 0%, #2b4e9a 40%, #1b9270 100%);
+    text-align: center;
+}
+
+footer p{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.content{
+    width: 55%;
+    margin: auto;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 15px;
+    box-shadow: 0px 10px 40px black;
+}
+
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.right{
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    transition: transform ease-in-out 0.4s;
+    filter: drop-shadow(1px 1px 10px black);
+}
+
+.right:hover{
+    transform: scale(1.04);
+}
+
+.right img
+{
+    height: 100%;
+    border-radius: 25px;
+}    
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1{
+    font-size: 2em;
+}
+
+.ingredients{
+    font-size: 1.3em;
+}
+
+.recipe{
+    font-size: 1.1em;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.462);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    opacity: 0;
+    transition: all ease-in-out 0.3s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+span{
+    color: white;
+    font-size: 1.1rem;
+}
